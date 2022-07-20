@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        1.id选择器
+        2.类选择器
+        3.标签选择器
+        4.复合选择器
+            Ⅰ.后代选择器
+            Ⅱ.子元素选择器
+            Ⅲ.并集选择器
+            Ⅳ.伪类选择器(链接伪类选择器、focus伪类选择器)
+     -->
+
+     
+    <style>
+        .nav ul li a {
+            color: red;
+        }
+
+        .hot>a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 将所有的<a>标签都变成红色 -->
+    <div class="nav">
+        <ul>
+            <li><a href="#">百度</a></li>
+            <li><a href="#">百度</a></li>
+        </ul>
+    </div>
+
+    <!-- 将大肘子变成红色 -->
+    <div class="hot">
+        <a href="#">大肘子</a>
+        <ul>
+            <li><a href="#">猪头</a></li>
+            <li><a href="#">猪尾巴</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

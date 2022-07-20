@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见网页布局</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .top {
+            height: 50px;
+            background-color: red;
+            margin: 0px auto;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .banner {
+            width: 980px;
+            height: 150px;
+            background-color: aqua;
+            text-align: center;
+            line-height: 150px;
+            margin: 10px auto;
+        }
+
+        .box {
+            width: 980px;
+            height: 300px;
+            background-color: pink;
+            text-align: center;
+            line-height: 300px;
+            margin: 0 auto;
+        }
+
+        li {
+            list-style: none;
+        }
+        
+        .box li {
+            float: left;
+            height: 300px;
+            width: 237px;
+            background-color: yellow;
+            margin-right: 10px;
+        }
+
+        .box .last {
+            margin-right: 0px;
+        }
+
+        .footer {
+            height: 200px;
+            background-color: blueviolet;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="top">top</div>
+    <div class="banner">banner</div>
+    <div class="box">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li class="last">4</li>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+</head>
+<body>
+    <h2>青春不常在,抓紧谈恋爱</h2>
+    <form action="">
+        <table width="500">
+            <tr>
+                <td>性别:</td>
+                <td>
+                    <input checked type="radio" name="sex" id="sex_male">
+                    <label for="sex_male"><img src="images/man.jpg"/>男</label>
+                    <input type="radio" name="sex" id="sex_female">
+                    <label for="sex_female"><img src="images/women.jpg"/>女</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>生日:</td>
+                <td>
+                    <select name="year" id="year">
+                        <option selected>--请选择年--</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                    </select>
+
+                    <select name="month" id="month">
+                        <option selected>--请选择月--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <select name="day" id="day">
+                        <option selected>--请选择日--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="area">所在地区:</label></td>
+                <td><input id="area" type="text" placeholder="北京思密达"></td>
+            </tr>
+
+            <tr>
+                <td>婚姻状况:</td>
+                <td>
+                    <input type="radio" name="marriage" id="marriage_no"><label for="marriage_no">未婚</label>
+                    <input type="radio" name="marriage" id="marriage_yes"><label for="marriage_yes">已婚</label>
+                    <input type="radio" name="marriage" id="marriage_break"><label for="marriage_break">离婚</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="xueli">学历:</label></td>
+                <td><input id="xueli" type="text" placeholder="小学毕业"></td>
+            </tr>
+
+            <tr>
+                <td><label>喜欢的类型:</label></td>
+                <td>
+                    <input type="checkbox" name="like_type" id="wumei"><label for="wumei">妩媚的</label>
+                    <input type="checkbox" name="like_type" id="cute"><label for="cute">可爱的</label>
+                    <input type="checkbox" name="like_type" id="xiaoxianrou"><label for="xiaoxianrou">小鲜肉</label>
+                    <input type="checkbox" name="like_type" id="laolarou"><label for="laolarou">老腊肉</label>
+                    <input type="checkbox" name="like_type" id="all"><label for="all">都喜欢</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="self_introduction">自我介绍:</label></td>
+                <td><textarea name="self_introduction" id="self_introduction" cols="50" rows="5" placeholder="自我介绍"></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" value="免费注册"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" id="condition">
+                    <label for="condition">我同意注册条款和加入会员标准</label>
+                    <br>
+                    <a href="#">我是会员,立即登录</a>
+
+                    <h3>我承诺</h3>
+                    <ul>
+                        <li>年满18岁,单身</li>
+                        <li>抱着严肃的态度</li>
+                        <li>真诚寻找另一半</li>
+                    </ul>
+                </td>
+            </tr>
+        
+        </table>
+    </form>
+</body>
+</html>
