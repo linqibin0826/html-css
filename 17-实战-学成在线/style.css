@@ -89,6 +89,7 @@ a {
     float: left;
     width: 345px;
     height: 40px;
+    outline: 0px;
     border: 1px solid #00a4ff;
     border-right: 0;
     padding-left: 15px;
@@ -101,7 +102,7 @@ a {
     width: 50px;
     height: 42px;
     border: 0px;
-    background-image: url(/images/btn.png);
+    background-image: url(images/btn.png);
 }
 
 /* 用户模块 */

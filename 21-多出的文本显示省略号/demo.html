@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 强制一行内显示文本 normal表示换行 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 150px;
+            height: 80px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        .box2 {
+            display: -webkit-box;
+            /* 一个块文本显示的行数 */
+            -webkit-line-clamp: 2;
+            /* 伸缩盒对象的子元素的排列方式 */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 150px;
+            height: 80px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        此处省略一万万万万字万万万万万万万字万万万字万万万万万万字万万万万万万万字万
+    </div>
+
+    <div class="box2">
+        此处省略一万万万万字万万万字万万万字字万万万字万万万万万万字万万字万万万字万万万万万万字万万
+    </div>
+</body>
+</html>
